@@ -8,6 +8,7 @@ terraform {
 }
 
 /*
+# We don't need this block if we use CICD tool like GitHub Actions or Jenkins because we configure these variables in the environment variables
 # Configure the AWS Provider
 provider "aws" {
   access_key = var.aws_access_key
